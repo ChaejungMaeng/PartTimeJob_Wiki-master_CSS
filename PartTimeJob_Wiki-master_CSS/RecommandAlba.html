@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <script src="jquery-3.4.1.min.js"></script>
+    <script src="RecommandAlba.js"></script>
+    <title>Alba_Wiki</title>
+    <style>
+        html, body {
+            background: linear-gradient( to top, yellow,  #8b00ff );
+            background-attachment: fixed;
+        }
+        #main {
+            width: 100%;
+            height: 100%;
+            display: flex;
+            flex-direction : column;
+        }
+      
+        #MainHeader {
+            background-color: #FF9D6E;
+            margin: 0px;
+            padding-top: 10px;
+            display: flex;
+            flex-direction: column;
+            height: 38px;
+        }
+
+        #BusinessTable {
+            display: flex;
+            flex-direction: row;
+            height: 80%;
+        }
+        div {
+            border: 1px;
+            text-align: center;
+            flex-grow: 1;
+        
+        }
+        .BusinessList {
+            flex-grow: 1;
+            display: flex;
+            flex-direction: column;
+            
+        }
+        .BusinessItem {
+            line-height: 80px;
+            margin: 10px;
+            box-shadow: 0 0 0 0.1rem powderblue;
+            border-radius: 12px;
+            display: flex;
+            flex-direction: columns;
+            white-space: normal;
+            flex-grow: 1;
+            font-size: 1.5rem;
+            background-color: transparent;
+            border: 5px solid #EBF5FF;
+        }
+        select {
+            padding : 3px;
+            margin: 2px;
+            flex-grow: 1;
+        }
+        #Login {
+            margin-bottom: 15px;
+            margin-right: 20px;
+            padding-right: 12px;
+            font-size: 22px;
+            background-color: transparent;
+            color: #FFFFFF;
+            border: 2px solid #FFFFFF;
+        }
+        #UserId {
+            float: Right;
+            margin-right: 15px;
+            padding-right : 10px;
+            text-align: right;
+        }
+        #LogOut {
+            margin-left: 15px;
+        }
+        
+    </style>
+</head>
+<body>
+    <div id="main">
+        <div>
+            <div style="float:left; color:#FFFFFF; padding:15px 2px 0 30px; font-size:40px; font-weight:bold;">AlBA WIKI</div>
+        </div>
+
+        <div id="MainHeader"></div>
+        <div>
+            <div style="float:left; color:#FFFFFF; padding:20px 2px 0 30px; font-size:40px; font-weight:bold;">맞춤형 추천 알바 목록</div>
+        </div>
+        </div>
+        <div>
+            <h1 id="CategoryName" style=" color:#FFFFFF; padding:20px 2px 0 30px; font-size:40px; font-weight:bold;">나의 이전 알바 선호도를 반영한 결과입니다!</h1>
+        </div>
+        <div id="BusinessTable">
+            <div class="BusinessList">
+                <div class="BusinessItem" style="float: none; color : #FFFFFF; font-weight:bold;">
+                    <div class="Number">1</div>
+                    <div class="BusinessName">흑석 CU</div>
+                    <div class="FullAddress">서울특별시 동작구 흑석동 10</div>
+                </div>
+                <div class="BusinessItem" style="float: none; color : #FFFFFF; font-weight:bold;">
+                    <div class="Number">2</div>
+                    <div class="BusinessName">테스트!</div>
+                    <div class="FullAddress">서울특별시 동작구 흑석동 10</div>
+                </div>
+                <div class="BusinessItem" style="float: none; color : #FFFFFF; font-weight:bold;">
+                    <div class="Number">3</div>
+                    <div class="BusinessName">테스트!</div>
+                    <div class="FullAddress">서울특별시 동작구 흑석동 10</div>
+                </div>
+            </div>
+            <div class="BusinessList">
+                <div class="BusinessItem" style="float: none; color : #FFFFFF; font-weight:bold;">
+                    <div class="Number">4</div>
+                    <div class="BusinessName">테스트!</div>
+                    <div class="FullAddress">서울특별시 동작구 흑석동 10</div>
+                </div>
+                <div class="BusinessItem" style="float: none; color : #FFFFFF; font-weight:bold;">
+                    <div class="Number">5</div>
+                    <div class="BusinessName">테스트!</div>
+                    <div class="FullAddress">서울특별시 동작구 흑석동 10</div>
+                </div>
+                <div class="BusinessItem" style="float: none; color : #FFFFFF; font-weight:bold;">
+                    <div class="Number">6</div>
+                    <div class="BusinessName">테스트!</div>
+                    <div class="FullAddress">서울특별시 동작구 흑석동 10</div>
+                </div>
+            </div>
+            <div class="BusinessList">
+                <div class="BusinessItem" style="float: none; color : #FFFFFF; font-weight:bold;">
+                    <div class="Number">7</div>
+                    <div class="BusinessName">테스트!</div>
+                    <div class="FullAddress">서울특별시 동작구 흑석동 10</div>
+                </div>
+                <div class="BusinessItem" style="float: none; color : #FFFFFF; font-weight:bold;">
+                    <div class="Number">8</div>
+                    <div class="BusinessName">테스트!</div>
+                    <div class="FullAddress">서울특별시 동작구 흑석동 10</div>
+                </div>
+                <div class="BusinessItem" style="float: none; color : #FFFFFF; font-weight:bold;">
+                    <div class="Number">9</div>
+                    <div class="BusinessName">테스트!</div>
+                    <div class="FullAddress">서울특별시 동작구 흑석동 10</div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

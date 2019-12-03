@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <script src="jquery-3.4.1.min.js"></script>
+    <script src="SelectCategoryScript.js"></script>
+    <title>Alba_Wiki</title>
+    <style>
+        html, body {
+            background: linear-gradient( to top, yellow,  #8b00ff );
+            background-attachment: fixed;
+        }
+        #main {
+            width: 100%;
+            height: 100%;
+            display: flex;
+            flex-direction : column;
+        }
+        #MainHeader {
+            background-color: #FF9D6E;
+            margin: 0px;
+            padding-top: 10px;
+            display: flex;
+            flex-direction: column;
+            height: 38px;
+        }
+
+
+        #BigCategory {
+            box-shadow: 0 0 0 0.1rem powderblue;
+            border-radius: 12px;
+            margin: 30px;
+            padding-top: 12px;
+            background-color: transparent;
+            border: 5px solid #EBF5FF;
+        }
+
+
+        #SmallCategory {
+            display: flex;
+            flex-direction : row;
+            height: 80%;
+        }
+        div {
+            text-align: center;
+            flex-grow: 1;
+        
+        }
+        .SmallCategorys {
+            flex-grow: 1;
+            display: flex;
+            flex-direction: column;
+            height: 80px;
+        }
+        .SmallCategoryItem {
+            line-height: 80px;
+            margin: 10px;
+
+            padding: 0px 0px 0 160px;
+
+            box-shadow: 0 0 0 0.1rem powderblue;
+            border-radius: 12px;
+            display: flex;
+            flex-direction: columns;
+            white-space: normal;
+            flex-grow: 1;
+            font-size: 1.5rem;
+            background-color: transparent;
+            border: 5px solid #EBF5FF;
+        }
+        select {
+            padding : 3px;
+            margin: 2px;
+            flex-grow: 1;
+        }
+        #Login {
+            margin-bottom: 15px;
+            margin-right: 20px;
+            padding-right: 12px;
+            font-size: 22px;
+            background-color: transparent;
+            color: #FFFFFF;
+            border: 2px solid #FFFFFF;
+        }
+        #UserId {
+            float: Right;
+            margin-right: 15px;
+            padding-right : 10px;
+            text-align: right;
+        }
+        #LogOut {
+            margin-left: 15px;
+        }
+        
+    </style>
+</head>
+<body>
+    <div id = "main">
+        <div>
+            <div style="float:left; color:#FFFFFF; padding:15px 2px 0 30px; font-size:40px; font-weight:bold;">AlBA WIKI</div>
+        </div>
+        <div id="MainHeader"> </div>
+            <div>
+                <div style="float:left; color:#FFFFFF; padding:20px 2px 0 30px; font-size:40px; font-weight:bold;">상세 위치 검색하기</div>
+            </div>
+        </div>
+        <div id = "BigCategory">
+            <h1 id = "BigCategoryName"></h1>
+        </div>
+        <div id = "SmallCategory">
+            <div class ="SmallCategorys">
+                <div class = "SmallCategoryItem" style="float: none;  color : #FFFFFF; font-weight:bold;">
+                    소분류 1
+                </div>
+                <div class = "SmallCategoryItem" style="float: none; color : #FFFFFF; font-weight:bold;">
+                    소분류 2
+                </div>
+                <div class = "SmallCategoryItem" style="float: none; color : #FFFFFF; font-weight:bold;">
+                    소분류 3
+                </div>
+            </div>
+            <div class ="SmallCategorys">
+                <div class = "SmallCategoryItem" style="float: none; color : #FFFFFF; font-weight:bold;">
+                    소분류 4
+                </div>
+                <div class = "SmallCategoryItem" style="float: none; color : #FFFFFF; font-weight:bold;">
+                    소분류 5
+                </div>
+                <div class = "SmallCategoryItem" style="float: none; color : #FFFFFF; font-weight:bold;">
+                    소분류 6
+                </div>
+            </div>
+            <div class ="SmallCategorys">
+                <div class = "SmallCategoryItem" style="float: none; color : #FFFFFF; font-weight:bold;">소분류 7</div>
+                <div class = "SmallCategoryItem" style="float: none; color : #FFFFFF; font-weight:bold;">
+                    소분류 8
+                </div>
+                <div class = "SmallCategoryItem" style="float: none; color : #FFFFFF; font-weight:bold;">
+                    소분류 9
+                </div>
+            </div>            
+        </div>
+    </div>
+</body>
+</html>

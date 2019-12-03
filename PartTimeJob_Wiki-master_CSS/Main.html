@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <script src="jquery-3.4.1.min.js"></script>
+    <script src="MainScript.js"></script>
+    <title>Alba_Wiki</title>
+    <style>
+        html, body {
+            background: linear-gradient( to top,#FAF58C, #8b00ff );
+            background-attachment: fixed;
+        }
+        #Main {
+            width: 100%;
+            height: 100%;
+            display: flex;
+            flex-direction : column;
+        }
+        #MainHeader {
+            background-color: #FF9D6E;
+            margin: 0px;
+            padding-top: 10px;
+            display: flex;
+            flex-direction: column;
+            height: 38px;
+        }
+        #SearchLocal { 
+            padding-top: 0px;
+        }
+
+        #MainCategory {
+            display: flex;
+            flex-direction: row;
+            height: 70%;
+            width: 70%;
+        }
+        div {
+            text-align: center;
+            flex-grow: 1;
+        }
+        .BigCategorys {
+            flex-grow: 1;
+            display: flex;
+            flex-direction: column;
+            height: 85px;
+            float :left;
+        }
+        .BigCategoryItem {
+            background-color: #FFFFFF;
+            flex-grow: 1;
+            margin: 15px;
+            line-height: 85px;
+            box-shadow: 0 0 0 0.1rem powderblue;
+            border-radius: 12px;
+            font-size: 1.5rem;
+            background-color: transparent;
+            border: 5px solid #EBF5FF;
+        }
+
+        #RecommandSection {
+            height: 250px;
+            width: 250px;
+            line-height: 250px;
+            background-color: powderblue;
+            flex-grow: 1;
+            padding: 2%;
+            margin: 3px;
+            box-shadow: 0 0 0 0.1rem powderblue;
+            border-radius: 50%;
+            font-size: 1.8rem;
+            background-color: transparent;
+            border: 5px solid #EBF5FF;
+        }
+        select {
+            padding: 2%;
+            margin: 7px;
+            flex-grow: 1;
+            font-size: 1.5rem;
+            font-weight: bold;
+        }
+
+        #Login {
+
+            margin-bottom: 15px;
+            margin-right: 20px;
+            padding-right: 12px;
+            font-size: 22px;
+            background-color: transparent;
+            color: #FFFFFF;
+            border: 2px solid #FFFFFF;
+        }
+        #UserId {
+            float: Right;
+            margin-right: 15px;
+            padding-bottom: 70px;
+            padding-right: 70px;
+            text-align: right;
+        }
+        #LogOut {
+            margin-left: 15px;
+        }
+    </style>
+</head>
+<body>
+    <div id="Main">
+        <div>
+            <div style="float:left; color:#FFFFFF; padding:15px 2px 0 30px; font-size:40px; font-weight:bold;">AlBA WIKI</div>
+        </div>
+        <div id="MainHeader">
+        </div>
+        <div>
+            <div style="float:left; color:#FFFFFF; padding:20px 2px 0 30px; font-size:40px; font-weight:bold;">알바 위키 검색하기</div>
+        </div>
+        <div id="SearchLocal" style=" position:absolute; bottom:530px; right : 400px;">
+            <select name="State" id="state">
+                <option value="">시/군 선택</option>
+                <option value="Seoul">서울특별시</option>
+                <option value="Busan">부산</option>
+                <option value="Incheon">인천</option>
+                <option value="Deajean">대전</option>
+            </select>
+            <select name="City" id="city">
+                <option value="">구/군 선택</option>
+            </select>
+        </div>
+
+        <div id="Login"> </div>
+
+        <div id="MainCategory">
+            <div class="BigCategorys">
+                <div class="BigCategoryItem" , style="float: none; color : #FFFFFF; font-weight:bold;">대분류1</div>
+                <div class="BigCategoryItem" , style="float: none; color : #FFFFFF; font-weight:bold;">대분류2</div>
+                <div class="BigCategoryItem" , style="float: none; color : #FFFFFF; font-weight:bold;">대분류3</div>
+            </div>
+            <div class="BigCategorys">
+                <div class="BigCategoryItem" , style="float: none; color : #FFFFFF; font-weight:bold;">대분류4</div>
+                <div class="BigCategoryItem" , style="float: none; color : #FFFFFF; font-weight:bold;">대분류5</div>
+                <div class="BigCategoryItem" , style="float: none; color : #FFFFFF; font-weight:bold;">대분류6</div>
+            </div>
+            <div class="BigCategorys">
+                <div class="BigCategoryItem" , style="float: none; color : #FFFFFF; font-weight:bold;">대분류7</div>
+                <div class="BigCategoryItem" , style="float: none; color : #FFFFFF; font-weight:bold;">대분류8</div>
+                <div class="BigCategoryItem" , style="float: none; color : #FFFFFF; font-weight:bold;">대분류9</div>
+            </div>
+        </div>
+        <div id="RecommandSection" , style=" position:absolute; bottom:175px; right : 40px;">나의 맞춤형 알바 찾기</div>
+
+    </div>
+</body>
+</html>
