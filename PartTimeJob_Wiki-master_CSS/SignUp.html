@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <script src="jquery-3.4.1.min.js"></script>
+    <script src="SignUp.js"></script>
+    <title>Alba_Wiki</title>
+    <style>
+        html, body {
+            background: linear-gradient( to top, yellow,  #8b00ff );
+            background-attachment: fixed;
+        }
+        #Main {
+            width: 100%;
+            height: 100%;
+            display: flex;
+            flex-direction : column;
+        }
+        #MainHeader {
+            background-color: #FF9D6E;
+            margin: 0px;
+            padding-top: 10px;
+            display: flex;
+            flex-direction: column;
+            height: 38px;
+        }
+       
+        
+
+        #SignUpSection {
+            display: flex;
+            flex-direction: column;
+            margin-left: 300px;
+            margin-right: 300px;
+            margin-top: 100px;
+        }
+        div {
+            text-align: center;
+            flex-grow: 1;
+        
+        }
+
+        #IdSection {
+            
+            flex-grow: 1;
+            margin-left: 200px;
+            margin-right: 200px;
+            margin-top: 50px;
+            box-shadow: 0 0 0 0.1rem powderblue;
+            border-radius: 12px;
+            display: flex;
+            flex-direction: row;
+            height: 60px;
+            padding-top: 15px;
+            background-color: transparent;
+            border: 5px solid #EBF5FF;
+        }
+        #PasswordSection {
+            
+            flex-grow: 1;
+            margin-left: 200px;
+            margin-right: 200px;
+            margin-top: 50px;
+            box-shadow: 0 0 0 0.1rem powderblue;
+            border-radius: 12px;
+            display: flex;
+            flex-direction: row;
+            height: 60px;
+            padding-top: 15px;
+            background-color: transparent;
+            border: 5px solid #EBF5FF;
+        }
+
+        #SubmitSection {
+
+            flex-grow: 1;
+            margin-left: 200px;
+            margin-right: 200px;
+            margin-top: 50px;
+            box-shadow: 0 0 0 0.1rem powderblue;
+            border-radius: 12px;
+            display: flex;
+            flex-direction: row;
+            height: 60px;
+            padding-top: 15px;
+            background-color: transparent;
+            border: 5px solid #EBF5FF;
+        }
+
+        #AgeSection {
+
+            flex-grow: 1;
+            margin-left: 200px;
+            margin-right: 200px;
+            margin-top: 50px;
+            box-shadow: 0 0 0 0.1rem powderblue;
+            border-radius: 12px;
+            display: flex;
+            flex-direction: row;
+            height: 60px;
+            padding-top: 15px;
+            background-color: transparent;
+            border: 5px solid #EBF5FF;
+        }
+        #LocalSection {
+
+            flex-grow: 1;
+            margin-left: 200px;
+            margin-right: 200px;
+            margin-top: 50px;
+            font-size : 40px;
+            box-shadow: 0 0 0 0.1rem powderblue;
+            border-radius: 12px;
+            display: flex;
+            flex-direction: row;
+            height: 60px;
+            background-color: transparent;
+            border: 5px solid #EBF5FF;
+           
+        }
+    </style>
+</head>
+<body>
+    <div id="Main">
+        <div>
+            <div style="float:left; color:#FFFFFF; padding:15px 2px 0 30px; font-size:40px; font-weight:bold;">AlBA WIKI</div>
+        </div>
+        <div id="MainHeader">
+            <h1 style="float:left; color:#FFFFFF; padding:50px 0px 0 0px; font-size:40px; font-weight:bold;">SIGN UP</h1>
+        </div>
+
+        <div id="SignUpSection">
+            
+            <div id="IdSection">
+                <div style="color:#FFFFFF; padding:7px 0px 0 50px; font-size:30px; font-weight:bold;">
+                    아이디
+                </div>
+                <div>
+                    <input type="text" name="Id" id="Id" style="padding:27px 0px 0 50px;">
+                </div>
+            </div>
+            <div id="PasswordSection">
+                <div style="color:#FFFFFF; padding:7px 0px 0 50px; font-size:30px; font-weight:bold;">
+                    비밀번호
+                </div>
+                <div>
+                    <input type="password" name="Password" id="Password" style="padding:27px 0px 0 50px;">
+                </div>
+            </div>
+            <div id="AgeSection">
+                <div style="color:#FFFFFF; padding:7px 0px 0 60px; font-size:30px; font-weight:bold;">
+                    나이
+                </div>
+                <div>
+                    <input type="text" name="Age" id="Age" style="padding:27px 0px 0 50px;">
+                </div>
+            </div>
+
+            <div id="LocalSection">
+                <div style="color:#FFFFFF; padding:13px 00px 0 55px; font-size:30px; font-weight:bold;">
+                    주소
+                </div>
+                <div id="Local">
+                    <select name="State" id="state">
+                        <option value="" >시/군 선택</option>
+                        <option value="Seoul">서울특별시</option>
+                        <option value="Busan">부산</option>
+                        <option value="Incheon">인천</option>
+                        <option value="Deajean">대전</option>
+                    </select>
+                    <select name="City" id="city" >
+                        <option value="">구/군 선택</option>
+                    </select>
+                </div>
+            </div>
+            <div id="SubmitSection">
+                <div id="SinUp">
+                    <button type="submit" id="SignUpBtn" style="background-color: transparent; border: 5px solid #EBF5FF; color:#FFFFFF; padding:0px 20px 0 20px; font-size:30px; font-weight:bold;" >회원가입</button>
+                </div>
+            </div>
+
+        </div>
+    </div>
+    </div>
+</body>
+</html>
